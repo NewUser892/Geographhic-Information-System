@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Sistem Informasi Peta Desa Sidanegara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .hero-section {
+            padding: 50px 0;
+        }
+        .content-section {
+            padding: 40px 0;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .btn-dark-mode {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">GIS Desa Sidanegara</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><i class="fas fa-home"></i> Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#peta"><i class="fas fa-map"></i> Peta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#keterangan"><i class="fas fa-info-circle"></i> Keterangan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tentang"><i class="fas fa-users"></i> Tentang Desa</a>
+                </li>
+            </ul>
+            <!-- Toggle Dark/Light Mode -->
+            <button id="darkModeToggle" class="btn btn-outline-secondary ms-3 btn-dark-mode">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section" id="home">
+    <div class="container text-center">
+        <h1 class="display-6">Selamat Datang di Peta Sidanegara</h1>
+        <img src="https://asset-2.tstatic.net/jateng/foto/bank/images/pemdes-sidanegara-cilacap.jpg" alt="Desa Sidanegara" class="img-fluid rounded my-3">
+        <p class="lead">Desa Sidanegara, kecamatan Kedungreja, Kabupaten Cilacap, Provinsi Jawa Tengah merupakan satu  dari Sebelas ( 11 ) desa di kecamatan Kedungreja yang mempunyai jarak 70 km dari kota kabupaten. Desa Sidanegara terdiri dari 3 (tiga) dusun 6 (enam) RW dan 47 (empat puluh tujuh) RT dengan luas 516.368 Ha, dengan potensi perangkatnya terdiri dari Seorang Kepala Desa (Kades), satu orang Sekretaris Desa (Sekdes), dua orang kaur tiga kasi dan tiga Kepala Dusun (Kadus).</p>
+        <p><strong>Nama:</strong> Desi Riyanti | <strong>NIM:</strong> 22SA21A173</p>
+    </div>
+</div>
+
+<!-- Content Sections -->
+<div class="content-section" id="peta">
+    <div class="container">
+        <h2 class="text-center">Peta Desa</h2>
+        <p class="text-center">Tampilan peta geografis Desa yang mencakup informasi wilayah serta fasilitas publik di Sidanegara.</p>
+        <div class="ratio ratio-16x9">
+            <iframe src="peta.html" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="content-section" id="keterangan">
+    <div class="container">
+        <h2>Keterangan</h2>
+        <p>Tujuan pembuatan peta GIS Kelurahan Sidanegara adalah untuk memberikan gambaran yang akurat mengenai batas wilayah, fasilitas umum seperti sekolah, pasar, serta potensi lokal yang dimiliki. Peta ini diharapkan dapat membantu masyarakat dan pengunjung dalam mengakses berbagai layanan dan fasilitas di sekitar Sidanegara.</p>
+    </div>
+</div>
+
+<div class="content-section" id="tentang">
+    <div class="container">
+        <h2>Tentang Desa Sidanegara</h2>
+        <p><strong>Sejarah dan Letak Geografis:</strong> Desa Sidanegara merupakan terkenal dengan hasil padi yang melimpah dan sebagian masyarakat bekerja tembakau. Berlokasi strategis perbatasan provinsi Jabar dan Jateng, Sidanegara berkembang sebagai pengepul tembakau dan masyarakat yang ramah rukun tetangga.</p>
+        <p><strong>Visi dan Misi Pemerintahan:</strong> Desa Sidanegara mewujudkan desa yang mandiri, maju, sejahtera, dan berbudaya dengan mengedepankan nilai-nilai kebersamaan dan keberlanjutan dengan meningkatkan kesejahteraan masyarakat serta pembangunan infrastruktur berkelanjutan.</p>
+        <p><strong>Pelayanan Publik:</strong> Desa Sidanegara berkomitmen untuk memberikan pelayanan publik yang prima, transparan, dan berbasis kebutuhan masyarakat. Pelayanan ini dilakukan melalui pendekatan partisipatif dengan melibatkan seluruh elemen masyarakat, guna mendukung tercapainya kesejahteraan dan kemandirian desa. Pelayanan administrasi kependudukan, pelayanan perizinan, pelayanan kesejahteraan sosial, pelayanan kesehatan, dan lain-lain.</p>
+        <p><strong>Budaya dan Potensi Lokal:</strong> Sidanegara memiliki kegiatan seni dan budaya, acara budaya dilakukan untuk melestarikan budaya tradisional di pedesaan. Banyaknya usaha kecil menengah (UKM) yang bergerak di bidang kuliner dan kerajinan tangan masyarakat lokal.</p>
+    </div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<!-- Dark/Light Mode Toggle Script -->
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDarkMode = body.classList.contains('dark-mode');
+        darkModeToggle.innerHTML = isDarkMode
+            ? '<i class="fas fa-sun"></i> Light Mode'
+            : '<i class="fas fa-moon"></i> Dark Mode';
+    });
+</script>
+
+</body>
+</html>
